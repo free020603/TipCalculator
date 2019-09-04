@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/billTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bill : "
+        android:textColor="@color/colorText"
+        android:textSize="40sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <EditText
+        android:id="@+id/billEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-65dp"
+        android:layout_marginLeft="130dp"
+        android:hint="bill"
+        android:inputType="number"
+        android:textSize="40sp"
+        />
+
+
+    <TextView
+        android:id="@+id/qualityOfService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Quality of Service"
+        android:textSize="40dp"
+        android:textColor="@color/colorText"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdGroup"
+        android:layout_below="@+id/txtView">
+        <RadioButton
+            android:id="@+id/greatRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="70dp"
+            android:text="Great (20%)"
+            android:onClick="great"/>
+        <RadioButton
+            android:id="@+id/goodRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="70dp"
+            android:text="Good (15%)"
+            android:onClick="good"/>
+
+        <RadioButton
+            android:id="@+id/badRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="70dp"
+            android:text="Bad (10%)"
+            android:onClick="bad"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate TIP"
+        android:onClick="calculateTip"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/tipTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="          Tip :"
+        android:textColor="@color/colorText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <EditText
+        android:id="@+id/tipEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Tip"
+        android:textSize="30sp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="160dp"
+        />
+
+    <TextView
+        android:id="@+id/totalBillTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="10dp"
+        android:text="Total Bill :"
+        android:textColor="@color/colorText"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/totalBillEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Bill"
+        android:textSize="30sp"
+        android:inputType="number"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="160dp"
+        />
+
+
+</LinearLayout>
